@@ -3547,18 +3547,12 @@ Corpse* Map::GetCorpse(uint64 guid)
     return ret;
 }
 
-Creature* Map::GetCreatureOrPetOrVehicle(uint64 guid)
+Unit* Map::GetCreatureOrPet(uint64 guid)
 {
-    if (IS_PLAYER_GUID(guid))
-        return NULL;
+    if (Unit* ret = GetCreature(guid))
+        return ret;
 
-    if (IS_PET_GUID(guid))
-        return GetPet(guid);
-
-    if (IS_VEHICLE_GUID(guid))
-        return GetVehicle(guid);
-
-    return GetCreature(guid);
+    return GetPet(guid);
 }
 
 GameObject* Map::GetGameObject(uint64 guid)

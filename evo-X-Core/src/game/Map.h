@@ -37,7 +37,6 @@
 #include <bitset>
 #include <list>
 
-class Creature;
 class Unit;
 class WorldPacket;
 class InstanceData;
@@ -399,7 +398,7 @@ class MANGOS_DLL_SPEC Map : public GridRefManager<NGridType>, public MaNGOS::Obj
         Creature* GetCreature(uint64 guid);
         Vehicle* GetVehicle(uint64 guid);
         Pet* GetPet(uint64 guid);
-        Creature* GetCreatureOrPetOrVehicle(uint64 guid);
+        Unit* GetCreatureOrPet(uint64 guid);
         GameObject* GetGameObject(uint64 guid);
         DynamicObject* GetDynamicObject(uint64 guid);
         Corpse* GetCorpse(uint64 guid);
