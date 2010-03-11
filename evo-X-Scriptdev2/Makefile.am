@@ -393,7 +393,7 @@ scripts/northrend/ulduar/halls_of_stone/instance_halls_of_stone.cpp \
 scripts/northrend/ulduar/ulduar/boss_algalon.cpp \
 scripts/northrend/ulduar/ulduar/boss_assemblyofiron.cpp \
 scripts/northrend/ulduar/ulduar/boss_auriaya.cpp \
-scripts/northrend/ulduar/ulduar/boss_flamelevithian.cpp \
+scripts/northrend/ulduar/ulduar/boss_flameleviathan.cpp \
 scripts/northrend/ulduar/ulduar/boss_freya.cpp \
 scripts/northrend/ulduar/ulduar/boss_generalvezax.cpp \
 scripts/northrend/ulduar/ulduar/boss_hodir.cpp \

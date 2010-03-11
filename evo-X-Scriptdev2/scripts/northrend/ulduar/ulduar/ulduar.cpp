@@ -113,7 +113,7 @@ bool GOGossipSelect_go_ulduar_teleporter(Player *pPlayer, GameObject *pGo, uint3
 }
 
 
-void AddSC_ulduar_teleporter()
+void AddSC_ulduar()
 {
     Script *newscript;
 

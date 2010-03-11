@@ -71,8 +71,7 @@ enum
 
     GO_KOLOGARN_BRIDGE          = 194232,
     GO_KOLOGARN_LOOT            = 195046,
-    GO_KOLOGARN_LOOT_H          = 195047,
-    GO_LEVIATHAN_GATE           = 194630
+    GO_KOLOGARN_LOOT_H          = 195047
 };
 
 #endif

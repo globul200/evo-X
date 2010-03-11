@@ -1898,10 +1898,10 @@
 							>
 						</File>
 						<File
-                                                        RelativePath="..\scripts\northrend\ulduar\halls_of_stone\boss_krystallus.cpp"
-                                                        >
-                                                </File>
-                                                <File
+                                          RelativePath="..\scripts\northrend\ulduar\halls_of_stone\boss_krystallus.cpp"
+                                          >
+                                    </File>
+                                     <File
 							RelativePath="..\scripts\northrend\ulduar\halls_of_stone\halls_of_stone.cpp"
 							>
 						</File>
@@ -1930,7 +1930,7 @@
                                           >
                                     </File>
                                     <File
-                                          RelativePath="..\scripts\northrend\ulduar\ulduar\boss_flameleviatan.cpp"
+                                          RelativePath="..\scripts\northrend\ulduar\ulduar\boss_flameleviathan.cpp"
                                           >
                                     </File>
                                     <File

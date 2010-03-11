@@ -328,11 +328,11 @@ struct MANGOS_DLL_DECL boss_razorscaleAI : public ScriptedAI
         m_pInstance = (ScriptedInstance*)pCreature->GetInstanceData();
         m_bIsRegularMode = pCreature->GetMap()->IsRegularDifficulty();
 
-        RazorscaleAddX[3] = 621.633301; RazorscaleAddY[3] = -228.671371; RazorscaleAddZ[3] = 391.180328; //right
-        RazorscaleAddX[1] = 564.140198; RazorscaleAddY[1] = -222.049149; RazorscaleAddZ[1] = 391.517212; //left
+        RazorscaleAddX[3] = 621.633301f; RazorscaleAddY[3] = -228.671371f; RazorscaleAddZ[3] = 391.180328f; //right
+        RazorscaleAddX[1] = 564.140198f; RazorscaleAddY[1] = -222.049149f; RazorscaleAddZ[1] = 391.517212f; //left
         RazorscaleAddX[2] = 591; RazorscaleAddY[2] = -209; RazorscaleAddZ[2] = 392; //middle
-        RazorscaleBossX[2] = 587.629761; RazorscaleBossY[2] = -179.022522; RazorscaleBossZ[2] = 391.625061; //ground
-        RazorscaleBossX[1] = 587.629761; RazorscaleBossY[1] = -179.022522; RazorscaleBossZ[1] = 435.415070; //air
+        RazorscaleBossX[2] = 587.629761f; RazorscaleBossY[2] = -179.022522f; RazorscaleBossZ[2] = 391.625061f; //ground
+        RazorscaleBossX[1] = 587.629761f; RazorscaleBossY[1] = -179.022522f; RazorscaleBossZ[1] = 435.415070f; //air
 
         Reset();
     }
