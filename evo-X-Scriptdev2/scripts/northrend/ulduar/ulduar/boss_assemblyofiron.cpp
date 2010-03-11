@@ -29,9 +29,9 @@ EndScriptData */
 #define SAY_SLAY -1
 */
 
-struct MANGOS_DLL_DECL boss_aaaAI : public ScriptedAI
+struct MANGOS_DLL_DECL boss_asembly_of_ironAI : public ScriptedAI
 {
-    boss_aaaAI(Creature* pCreature) : ScriptedAI(pCreature)
+    boss_asembly_of_ironAI(Creature* pCreature) : ScriptedAI(pCreature)
     {
         m_pInstance = (ScriptedInstance*)pCreature->GetInstanceData();
         Reset();
@@ -49,6 +49,8 @@ struct MANGOS_DLL_DECL boss_aaaAI : public ScriptedAI
 
     void JustDied(Unit *victim)
     {
+	    if (m_pInstance)
+            m_pInstance->SetData(TYPE_ASSEMBLY, DONE);
     }
 
     void Aggro(Unit* pWho)
@@ -75,17 +77,17 @@ struct MANGOS_DLL_DECL boss_aaaAI : public ScriptedAI
 
 };
 
-CreatureAI* GetAI_boss_aaa(Creature* pCreature)
+CreatureAI* GetAI_boss_asembly_of_iron(Creature* pCreature)
 {
-    return new boss_aaaAI(pCreature);
+    return new boss_asembly_of_ironAI(pCreature);
 }
 
 void AddSC_boss_asembly_of_iron()
 {
     Script *newscript;
     newscript = new Script;
-    newscript->Name = "boss_aaa";
-    newscript->GetAI = &GetAI_boss_aaa;
+    newscript->Name = "boss_asembly_of_iron";
+    newscript->GetAI = &GetAI_boss_asembly_of_iron;
     newscript->RegisterSelf();
 
 }

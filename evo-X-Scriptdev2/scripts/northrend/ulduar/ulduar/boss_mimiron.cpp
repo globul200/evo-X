@@ -49,6 +49,8 @@ struct MANGOS_DLL_DECL boss_mimironAI : public ScriptedAI
 
     void JustDied(Unit *victim)
     {
+		if (m_pInstance)
+            m_pInstance->SetData(TYPE_MIMIRON, DONE);
     }
 
     void Aggro(Unit* pWho)

@@ -30,31 +30,31 @@ enum
 
     //auriaya
     SPELL_BERSERK                = 47008,
-    SPELL_GUARDIAN_SWARM        = 64396,
-    SPELL_SENTINEL_BLAST        = 64389,
-    SPELL_SENTINEL_BLAST_H        = 64678,
-    SPELL_SONIC_SCREECH            = 64422,
+    SPELL_GUARDIAN_SWARM         = 64396,
+    SPELL_SENTINEL_BLAST         = 64389,
+    SPELL_SENTINEL_BLAST_H       = 64678,
+    SPELL_SONIC_SCREECH          = 64422,
     SPELL_SONIC_SCREECH_H        = 64688,
-    SPELL_FEAR                    = 64386,
+    SPELL_FEAR                   = 64386,
     //feral defender
     SPELL_FEIGN_DEATH            = 57685,
-    SPELL_FERAL_ESSENCE            = 64455,
-    SPELL_FERAL_POUNCE            = 64478,
-    SPELL_FERAL_POUNCE_H        = 64669,
-    SPELL_FERAL_RUSH            = 64496,
-    SPELL_FERAL_RUSH_H            = 64674,
+    SPELL_FERAL_ESSENCE          = 64455,
+    SPELL_FERAL_POUNCE           = 64478,
+    SPELL_FERAL_POUNCE_H         = 64669,
+    SPELL_FERAL_RUSH             = 64496,
+    SPELL_FERAL_RUSH_H           = 64674,
     //sanctum sentry
-    SPELL_RIP_FLESH                = 64375,
+    SPELL_RIP_FLESH              = 64375,
     SPELL_RIP_FLESH_H            = 64667,
-    SPELL_SAVAGE_POUNCE            = 64666,
+    SPELL_SAVAGE_POUNCE          = 64666,
     SPELL_SAVAGE_POUNCE_H        = 64374,
-    SPELL_STRENGHT_OF_PACK        = 64381,
+    SPELL_STRENGHT_OF_PACK       = 64381,
     //seeping feral essence
-    AURA_VOID_ZONE                = 64458,
-    AURA_VOID_ZONE_H            = 64676,
+    AURA_VOID_ZONE               = 64458,
+    AURA_VOID_ZONE_H             = 64676,
     //NPC ids
     MOB_VOID_ZONE                = 34098,
-    MOB_FERAL_DEFENDER            = 34035
+    MOB_FERAL_DEFENDER           = 34035
 };
 
 // Seeping Feral Essence

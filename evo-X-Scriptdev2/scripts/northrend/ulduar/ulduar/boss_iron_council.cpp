@@ -32,41 +32,41 @@ enum
     SPELL_BERSERK                = 47008,
     SPELL_SUPERCHARGE            = 61920,
     //steelbreaker
-    SPELL_HIGH_VOLTAGE            = 61890,
-    SPELL_HIGH_VOLTAGE_H        = 63498,
-    SPELL_FUSION_PUNCH            = 61903,
-    SPELL_FUSION_PUNCH_H        = 63493,
-    SPELL_STATIC_DISRUPTION        = 44008,
+    SPELL_HIGH_VOLTAGE           = 61890,
+    SPELL_HIGH_VOLTAGE_H         = 63498,
+    SPELL_FUSION_PUNCH           = 61903,
+    SPELL_FUSION_PUNCH_H         = 63493,
+    SPELL_STATIC_DISRUPTION      = 44008,
     SPELL_STATIC_DISRUPTION_H    = 63494,
-    SPELL_POWER                    = 64637,
+    SPELL_POWER                  = 64637,
     SPELL_POWER_H                = 61888,
-    SPELL_ELECTRICAL_CHARGE        = 61902,
+    SPELL_ELECTRICAL_CHARGE      = 61902,
     //runemaster molgeim
-    SPELL_SHIELD                = 62274,
-    SPELL_SHIELD_H                = 63489,
-    SPELL_RUNE_OF_POWER            = 63513,
-    SPELL_RUNE_OF_DEATH            = 62269,
+    SPELL_SHIELD                 = 62274,
+    SPELL_SHIELD_H               = 63489,
+    SPELL_RUNE_OF_POWER          = 63513,
+    SPELL_RUNE_OF_DEATH          = 62269,
     SPELL_RUNE_OF_DEATH_H        = 63490,
-    SPELL_RUNE_OF_SUMMONING        = 62273,
+    SPELL_RUNE_OF_SUMMONING      = 62273,
     //rune of power
-    AURA_RUNE_OF_POWER            = 61974,
+    AURA_RUNE_OF_POWER           = 61974,
     //rune of summoning
-    AURA_RUNE_OF_SUMMONING        = 62019,
+    AURA_RUNE_OF_SUMMONING       = 62019,
     //lightning elemental
     SPELL_LIGHTNING_BLAST        = 62054,
-    SPELL_LIGHTNING_BLAST_H        = 63491,
+    SPELL_LIGHTNING_BLAST_H      = 63491,
     //stormcaller brundir
     SPELL_CHAIN_LIGHTNING        = 61879,
-    SPELL_CHAIN_LIGHTNING_H        = 63479,
-    SPELL_OVERLOAD                = 61869,
+    SPELL_CHAIN_LIGHTNING_H      = 63479,
+    SPELL_OVERLOAD               = 61869,
     SPELL_LIGHTNING_WHIRL        = 61915,
-    SPELL_LIGHTNING_WHIRL_H        = 63483,
+    SPELL_LIGHTNING_WHIRL_H      = 63483,
     SPELL_STORMSHIELD            = 64187,
-    SPELL_LIGHTNING_TENDRILS    = 61887,
-    SPELL_LIGHTNING_TENDRILS_H    = 63486,
+    SPELL_LIGHTNING_TENDRILS     = 61887,
+    SPELL_LIGHTNING_TENDRILS_H   = 63486,
     LIGHTNING_TENDRILS_VISUAL    = 61883,
     //NPC ids
-    MOB_LIGHTNING_ELEMENTAL        = 32958
+    MOB_LIGHTNING_ELEMENTAL      = 32958
 };
 
 // Rune of Power

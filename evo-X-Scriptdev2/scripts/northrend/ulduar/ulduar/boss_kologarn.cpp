@@ -29,27 +29,27 @@ enum
     //yells
 
     //kologarn
-    SPELL_OVERHEAD_SMASH        = 63356,
-    SPELL_OVERHEAD_SMASH_H        = 64003,
+    SPELL_OVERHEAD_SMASH         = 63356,
+    SPELL_OVERHEAD_SMASH_H       = 64003,
     SPELL_ONE_ARMED_SMASH        = 63573,
-    SPELL_ONE_ARMED_SMASH_H        = 64006,
+    SPELL_ONE_ARMED_SMASH_H      = 64006,
     SPELL_STONE_SHOUT            = 63716,
-    SPELL_STONE_SHOUT_H            = 64005,
-    SPELL_PETRIFYING_BREATH        = 62030,
+    SPELL_STONE_SHOUT_H          = 64005,
+    SPELL_PETRIFYING_BREATH      = 62030,
     SPELL_PETRIFYING_BREATH_H    = 63980,
     //left arm
-    SPELL_SHOCKWAVE                = 63783,
+    SPELL_SHOCKWAVE              = 63783,
     SPELL_SHOCKWAVE_H            = 63982,
     //right arm
-    SPELL_STONE_GRIP            = 62166,
-    SPELL_STONE_GRIP_H            = 63981,
+    SPELL_STONE_GRIP             = 62166,
+    SPELL_STONE_GRIP_H           = 63981,
     //both
-    SPELL_ARM_VISUAL            = 64753,
+    SPELL_ARM_VISUAL             = 64753,
     //rubble
-    SPELL_RUMBLE                = 63818,
-    SPELL_STONE_NOVA            = 63978,
+    SPELL_RUMBLE                 = 63818,
+    SPELL_STONE_NOVA             = 63978,
     //NPC ids
-    MOB_RUBBLE                    = 33768
+    MOB_RUBBLE                   = 33768
 };
 
 float LeftArmX;

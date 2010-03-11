@@ -29,42 +29,42 @@ enum
     //yells/emotes
 
     //razorscale air phase
-    SPELL_FIREBALL                = 62796,
+    SPELL_FIREBALL              = 62796,
     SPELL_FIREBALL_H            = 63815,
-    SPELL_WING_BUFFET            = 62666,
-    SPELL_STUN                    = 62794,
+    SPELL_WING_BUFFET           = 62666,
+    SPELL_STUN                  = 62794,
     //both
-    SPELL_BERSERK                = 47008,
-    DEVOURING_FLAME_VISUAL        = 63236,
-    SPELL_FLAME_BREATH            = 63317,
+    SPELL_BERSERK               = 47008,
+    DEVOURING_FLAME_VISUAL      = 63236,
+    SPELL_FLAME_BREATH          = 63317,
     SPELL_FLAME_BREATH_H        = 64021,
     //ground
-    SPELL_FLAME_BUFFET            = 64016,
+    SPELL_FLAME_BUFFET          = 64016,
     SPELL_FLAME_BUFFET_H        = 64023,
     SPELL_FUSE_ARMOR            = 64771,
 
     //devouring flame target
     AURA_DEVOURING_FLAME        = 64709,
-    AURA_DEVOURING_FLAME_H        = 64734,
+    AURA_DEVOURING_FLAME_H      = 64734,
 
     //dark rune watcher
     SPELL_LIGHTNING_BOLT        = 63809,
-    SPELL_LIGHTNING_BOLT_H        = 64696,
-    SPELL_CHAIN_LIGHTNING        = 64758,
-    SPELL_CHAIN_LIGHTNING_H        = 64759,
+    SPELL_LIGHTNING_BOLT_H      = 64696,
+    SPELL_CHAIN_LIGHTNING       = 64758,
+    SPELL_CHAIN_LIGHTNING_H     = 64759,
 
     //dark rune sentinel
-    SPELL_BATTLE_SHOUT            = 46763,
+    SPELL_BATTLE_SHOUT          = 46763,
     SPELL_BATTLE_SHOUT_H        = 64062,
-    SPELL_WHIRLWIND                = 63808,
+    SPELL_WHIRLWIND             = 63808,
 
     //dark rune guardian
-    SPELL_STORMSTRIKE            = 64757,
+    SPELL_STORMSTRIKE           = 64757,
 
     //NPC ids
-    MOB_DARK_RUNE_WATCHER        = 33453,
-    MOB_DARK_RUNE_SENTINEL        = 33846,
-    MOB_DARK_RUNE_GUARDIAN        = 33388
+    MOB_DARK_RUNE_WATCHER       = 33453,
+    MOB_DARK_RUNE_SENTINEL      = 33846,
+    MOB_DARK_RUNE_GUARDIAN      = 33388
 };
 
 #define GOSSIP_START     "Bring Razorscale down!"

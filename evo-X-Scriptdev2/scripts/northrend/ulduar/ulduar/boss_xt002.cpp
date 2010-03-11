@@ -29,39 +29,39 @@ enum
     //xt yells
     SAY_AGGRO                = -1603000,
     SAY_DEATH                = -1603008,
-    SAY_TANCTRUM            = -1603001,
-    SAY_SLAY_01                = -1603002,
-    SAY_SLAY_02                = -1603003,
-    SAY_BERSERK                = -1603007,
-    SAY_ADDS                = -1603006,
-    SAY_HEART_OPEN            = -1603004,
-    SAY_HEART_CLOSE            = -1603005,
+    SAY_TANCTRUM             = -1603001,
+    SAY_SLAY_01              = -1603002,
+    SAY_SLAY_02              = -1603003,
+    SAY_BERSERK              = -1603007,
+    SAY_ADDS                 = -1603006,
+    SAY_HEART_OPEN           = -1603004,
+    SAY_HEART_CLOSE          = -1603005,
 
     //xt-002
-    SPELL_TANCTRUM            = 62776,
-    SPELL_LIGHT_BOMB        = 63018,
-    SPELL_LIGHT_BOMB_H        = 65121,
-    SPELL_GRAVITY_BOMB        = 63024,
-    SPELL_GRAVITY_BOMB_H    = 64234,
-    SPELL_ENRAGE            = 47008,
-    SPELL_STUN                = 3618,
+    SPELL_TANCTRUM           = 62776,
+    SPELL_LIGHT_BOMB         = 63018,
+    SPELL_LIGHT_BOMB_H       = 65121,
+    SPELL_GRAVITY_BOMB       = 63024,
+    SPELL_GRAVITY_BOMB_H     = 64234,
+    SPELL_ENRAGE             = 47008,
+    SPELL_STUN               = 3618,
 
     //heart of the deconstructor
-    SPELL_EXPOSED_HEART        = 63849,
+    SPELL_EXPOSED_HEART      = 63849,
 
     //XE-321 Boombot
-    SPELL_BOOM                = 38831,            // replacing real spell
+    SPELL_BOOM               = 38831,            // replacing real spell
 
     //XM-024 Pummeller
-    SPELL_CLEAVE            = 8374,
+    SPELL_CLEAVE             = 8374,
     SPELL_TRAMPLE            = 5568,
-    SPELL_UPPERCUT            = 10966,
+    SPELL_UPPERCUT           = 10966,
 
     //NPC ids
     NPC_HEART                = 33329,
-    NPC_SCRAPBOT            = 33343,
-    NPC_BOOMBOT                = 33346,
-    NPC_PUMMELER            = 33344
+    NPC_SCRAPBOT             = 33343,
+    NPC_BOOMBOT              = 33346,
+    NPC_PUMMELER             = 33344
 };
 
 // XM-024 Pummeller

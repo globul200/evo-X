@@ -49,6 +49,8 @@ struct MANGOS_DLL_DECL boss_hodirAI : public ScriptedAI
 
     void JustDied(Unit *victim)
     {
+		if (m_pInstance)
+            m_pInstance->SetData(TYPE_HODIR, DONE);
     }
 
     void Aggro(Unit* pWho)
