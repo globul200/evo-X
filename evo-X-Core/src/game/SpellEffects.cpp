@@ -2351,6 +2351,39 @@ void Spell::EffectDummy(SpellEffectIndex eff_idx)
                 m_caster->CastCustomSpell(m_caster, 45470, &bp, NULL, NULL, true);
                 return;
             }
+            //Death Grip
+            else if (m_spellInfo->Id == 49560 || m_spellInfo->Id == 49576)
+			{
+                if (!unitTarget || !m_caster)
+                    return;
+                
+				float x = m_caster->GetPositionX();
+                float y = m_caster->GetPositionY();
+                float z = m_caster->GetPositionZ()+1;
+                float orientation = unitTarget->GetOrientation();
+                    
+                if(unitTarget->GetTypeId() != TYPEID_PLAYER)
+                {
+					Creature* creature = (Creature*) unitTarget;
+					uint32 CreatureRank = creature->GetCreatureInfo()->rank;
+					
+					//If creature target is >= Rare Elite cast Taunt
+					if(CreatureRank >= CREATURE_ELITE_RAREELITE)
+				   		m_caster->CastSpell(unitTarget, 51399, true, NULL); 
+					else
+					   {
+						 //Teleport creature in front of caster except of World Bosses
+						 unitTarget->GetMap()->CreatureRelocation((Creature*)unitTarget, x, y, z, orientation);
+						 ((Creature*)unitTarget)->SendMonsterMove(x, y, z, SPLINETYPE_NORMAL, ((Creature*)unitTarget)->GetSplineFlags(), 1);
+						 
+						 //Only creature targets can be affected by Taunt
+						 m_caster->CastSpell(unitTarget, 51399, true, NULL);
+					   } 
+				}
+                else 
+					unitTarget->NearTeleportTo(x, y, z, orientation, false);                
+				return;
+			}
             break;
         }
     }
