@@ -391,6 +391,7 @@ scripts/northrend/ulduar/halls_of_stone/halls_of_stone.cpp \
 scripts/northrend/ulduar/halls_of_stone/def_halls_of_stone.h \
 scripts/northrend/ulduar/halls_of_stone/instance_halls_of_stone.cpp \
 scripts/northrend/ulduar/ulduar/instance_ulduar.cpp \
+scripts/northrend/ulduar/ulduar/ulduar_teleporter.cpp \
 scripts/northrend/ulduar/ulduar/ulduar.h \
 scripts/northrend/utgarde_keep/utgarde_keep/boss_ingvar.cpp \
 scripts/northrend/utgarde_keep/utgarde_keep/boss_keleseth.cpp \

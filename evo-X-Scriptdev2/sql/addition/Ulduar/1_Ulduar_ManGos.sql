@@ -1,0 +1,1 @@
+UPDATE gameobject_template SET ScriptName='go_ulduar_teleporter' WHERE entry IN (194569);
