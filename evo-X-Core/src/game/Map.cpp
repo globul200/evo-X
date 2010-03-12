@@ -3522,22 +3522,22 @@ void Map::ScriptsProcess()
     return;
 }
 
-Creature* Map::GetCreature(uint64 guid)
+Creature* Map::GetCreature(ObjectGuid guid)
 {
-    return m_objectsStore.find<Creature>(guid, (Creature*)NULL);
+    return m_objectsStore.find<Creature>(guid.GetRawValue(), (Creature*)NULL);
 }
 
-Vehicle* Map::GetVehicle(uint64 guid)
+Vehicle* Map::GetVehicle(ObjectGuid guid)
 {
-    return m_objectsStore.find<Vehicle>(guid, (Vehicle*)NULL);
+    return m_objectsStore.find<Vehicle>(guid.GetRawValue(), (Vehicle*)NULL);
 }
 
-Pet* Map::GetPet(uint64 guid)
+Pet* Map::GetPet(ObjectGuid guid)
 {
-    return m_objectsStore.find<Pet>(guid, (Pet*)NULL);
+    return m_objectsStore.find<Pet>(guid.GetRawValue(), (Pet*)NULL);
 }
 
-Corpse* Map::GetCorpse(uint64 guid)
+Corpse* Map::GetCorpse(ObjectGuid guid)
 {
     Corpse * ret = ObjectAccessor::GetCorpseInMap(guid,GetId());
     if (!ret)
@@ -3547,27 +3547,31 @@ Corpse* Map::GetCorpse(uint64 guid)
     return ret;
 }
 
-Unit* Map::GetCreatureOrPet(uint64 guid)
+Unit* Map::GetCreatureOrPet(ObjectGuid guid)
 {
-    if (Unit* ret = GetCreature(guid))
-        return ret;
+     switch(guid.GetHigh())
+     {
+         case HIGHGUID_UNIT:         return GetCreature(guid);
+         case HIGHGUID_PET:          return GetPet(guid);
+         default:                    break;
+     }
 
-    return GetPet(guid);
+    return NULL;
 }
 
-GameObject* Map::GetGameObject(uint64 guid)
+GameObject* Map::GetGameObject(ObjectGuid guid)
 {
-    return m_objectsStore.find<GameObject>(guid, (GameObject*)NULL);
+    return m_objectsStore.find<GameObject>(guid.GetRawValue(), (GameObject*)NULL);
 }
 
-DynamicObject* Map::GetDynamicObject(uint64 guid)
+DynamicObject* Map::GetDynamicObject(ObjectGuid guid)
 {
-    return m_objectsStore.find<DynamicObject>(guid, (DynamicObject*)NULL);
+    return m_objectsStore.find<DynamicObject>(guid.GetRawValue(), (DynamicObject*)NULL);
 }
 
-WorldObject* Map::GetWorldObject(uint64 guid)
+WorldObject* Map::GetWorldObject(ObjectGuid guid)
 {
-    switch(GUID_HIPART(guid))
+    switch(guid.GetHigh())
     {
         case HIGHGUID_PLAYER:       return ObjectAccessor::FindPlayer(guid);
         case HIGHGUID_GAMEOBJECT:   return GetGameObject(guid);
